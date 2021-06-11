@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Script para traducir la descripción de las cartas a ESP
 // @author       Usaka Rokujou
-// @match        https://duelingnexus.com/editor/*
+// @match        https://duelingnexus.com/*
 // @icon         https://www.google.com/s2/favicons?domain=duelingnexus.com
 // @grant        none
 // ==/UserScript==
@@ -40,7 +40,7 @@
 
                     content = content.split('|')
                     console.log(content)
-                    language.forEach(l => {
+                    languageList.forEach(l => {
                         if(l !== 'en'){
                             let translate = {
                                 name : content.find(f => f.includes(`${l}_name`))?.split('=')[1]?.trim(),
@@ -92,7 +92,7 @@
 
     select.value = language
 
-    document.getElementById('editor-menu-content').appendChild(select)
+    document.getElementById('editor-menu-content')?.appendChild(select)
 
     var oldSetCardInfo = Engine.UI.prototype.setCardInfo
 
