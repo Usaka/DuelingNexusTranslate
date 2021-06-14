@@ -6,6 +6,10 @@
 // @author       Usaka_Rokujou
 // @match        https://duelingnexus.com/*
 // @grant        none
+// @homepage     https://github.com/Usaka/dn-translate/edit/master/translate.js
+// @homepageURL  https://github.com/Usaka/dn-translate/edit/master/translate.js
+// @downloadURL  https://raw.githubusercontent.com/Usaka/dn-translate/master/translate.js
+// @supportURL   https://github.com/Usaka/dn-translate/issues
 // ==/UserScript==
 
 function changeLanguage(){
