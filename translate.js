@@ -6,8 +6,8 @@
 // @author       Usaka_Rokujou
 // @match        https://duelingnexus.com/*
 // @grant        none
-// @homepage     https://github.com/Usaka/dn-translate/edit/master/translate.js
-// @homepageURL  https://github.com/Usaka/dn-translate/edit/master/translate.js
+// @homepage     https://github.com/Usaka/dn-translate/master/translate.js
+// @homepageURL  https://github.com/Usaka/dn-translate/master/translate.js
 // @downloadURL  https://raw.githubusercontent.com/Usaka/dn-translate/master/translate.js
 // @supportURL   https://github.com/Usaka/dn-translate/issues
 // ==/UserScript==
@@ -80,6 +80,7 @@ var languageList = ['en','es','fr','de','it','pt'];
 
 var select = document.createElement("select")
 select.id = 'language'
+select.classList.add('editor-select')
 select.addEventListener('change', changeLanguage)
 
 languageList.forEach(l => {
