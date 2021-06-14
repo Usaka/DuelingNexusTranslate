@@ -1,11 +1,10 @@
 // ==UserScript==
 // @name         Translate (EN,ES,FR,DE,IT,PT)
-// @namespace    http://tampermonkey.net/
+// @namespace    https://duelingnexus.com/
 // @version      0.1
 // @description  Script para traducir la descripción de las cartas a ESP
 // @author       Usaka Rokujou
 // @match        https://duelingnexus.com/*
-// @icon         https://www.google.com/s2/favicons?domain=duelingnexus.com
 // @grant        none
 // ==/UserScript==
 
