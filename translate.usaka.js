@@ -7,8 +7,8 @@
   // @match        https://duelingnexus.com/game/*
   // @match        https://duelingnexus.com/editor/*
   // @grant        none
-  // @updateURL    https://github.com/Usaka/DuelingNexusTranslate/raw/master/translate.user.js
-  // @downloadURL  https://github.com/Usaka/DuelingNexusTranslate/raw/master/translate.user.js
+  // @updateURL    https://github.com/Usaka/DuelingNexusTranslate/raw/master/translate.usaka.js
+  // @downloadURL  https://github.com/Usaka/DuelingNexusTranslate/raw/master/translate.usaka.js
   // ==/UserScript==
 
   // Verifica si existe la data de la carta, la descarga y la muestra en pantalla
