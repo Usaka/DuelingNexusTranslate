@@ -7,8 +7,8 @@
 // @match        https://duelingnexus.com/game/*
 // @match        https://duelingnexus.com/editor/*
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/Usaka/DuelingNexusTranslate/master/translate.js
-// @downloadURL  https://raw.githubusercontent.com/Usaka/DuelingNexusTranslate/master/translate.js
+// @updateURL    https://github.com/Usaka/DuelingNexusTranslate/raw/master/translate.user.js
+// @downloadURL  https://github.com/Usaka/DuelingNexusTranslate/raw/master/translate.user.js
 // ==/UserScript==
 
 (function(){
