@@ -9,7 +9,6 @@
 // @grant        none
 // @updateURL    https://raw.githubusercontent.com/Usaka/dn-translate/master/translate.js
 // @downloadURL  https://raw.githubusercontent.com/Usaka/dn-translate/master/translate.js
-// @updateURL    https://raw.githubusercontent.com/Usaka/dn-translate/master/translate.js
 // ==/UserScript==
 
 (function(){
