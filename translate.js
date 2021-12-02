@@ -2,13 +2,13 @@
 // @name         Dueling Nexus Translate (EN,ES,FR,DE,IT,PT)
 // @namespace    https://duelingnexus.com/
 // @description  Script para traducir la descripción de las cartas a los idiomas soportados en yugioh.fandom.com
-// @author       Usaka_Rokujou
+// @author       UsakaRokujou
 // @version      0.1-beta
 // @match        https://duelingnexus.com/game/*
 // @match        https://duelingnexus.com/editor/*
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/Usaka/dn-translate/master/translate.js
-// @downloadURL  https://raw.githubusercontent.com/Usaka/dn-translate/master/translate.js
+// @updateURL    https://raw.githubusercontent.com/Usaka/DuelingNexusTranslate/master/translate.js
+// @downloadURL  https://raw.githubusercontent.com/Usaka/DuelingNexusTranslate/master/translate.js
 // ==/UserScript==
 
 (function(){
