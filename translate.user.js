@@ -7,8 +7,8 @@
 // @match        https://duelingnexus.com/game/*
 // @match        https://duelingnexus.com/editor/*
 // @grant        none
-// @updateURL    https://github.com/Usaka/DuelingNexusTranslate/raw/dev/translate.user.js
-// @downloadURL  https://github.com/Usaka/DuelingNexusTranslate/raw/dev/translate.user.js
+// @updateURL    https://github.com/Usaka/DuelingNexusTranslate/raw/master/translate.user.js
+// @downloadURL  https://github.com/Usaka/DuelingNexusTranslate/raw/master/translate.user.js
 // ==/UserScript==
 
 // Verifica si existe la data de la carta, la descarga y la muestra en pantalla
@@ -185,6 +185,7 @@ function createSelect() {
   select.value = localStorage.getItem("language");
 
   document.getElementById("editor-menu-content")?.appendChild(select);
+  document.getElementById("options-window")?.appendChild(select);
 }
 
 // Cambiar el lenguaje de la interfaz usando el selector
@@ -200,7 +201,7 @@ function changeLanguage(select) {
 // Obtener las traducciones locales necesarias
 async function loadLocalTranslate() {
   let result = await fetch(
-    "https://raw.githubusercontent.com/Usaka/DuelingNexusTranslate/dev/data/translate.json"
+    "https://raw.githubusercontent.com/Usaka/DuelingNexusTranslate/master/data/translate.json"
   );
 
   if (result) {
@@ -212,10 +213,10 @@ async function loadLocalTranslate() {
 
 // Inicializa el script
 async function init() {
+  await loadLocalTranslate();
   verifyVersion();
   loadLocalData();
   createSelect();
-  await loadLocalTranslate();
 
   // Reemplaza el metodo predefinido para cargar una carta en la barra derecha
   var oldSetCardInfo = Engine.UI.prototype.setCardInfo;
