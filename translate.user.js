@@ -3,7 +3,7 @@
 // @namespace    https://duelingnexus.com/
 // @description  Script para traducir la descripción de las cartas a los idiomas soportados en yugioh.fandom.com
 // @author       UsakaRokujou
-// @version      0.2.2-beta
+// @version      0.2.3-beta
 // @match        https://duelingnexus.com/game/*
 // @match        https://duelingnexus.com/editor/*
 // @grant        none
@@ -143,7 +143,7 @@ function setCardData(id) {
 
 // Verificar si el script esta en su ultima version o si se actualizo
 function verifyVersion() {
-  var version = "0.2.2-beta";
+  var version = GM_info.script.version;
 
   var currentVersion = localStorage.getItem("currentVersion");
 
