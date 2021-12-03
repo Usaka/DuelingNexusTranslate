@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         Dueling Nexus Translate (EN,ES,FR,DE,IT,PT)
+// @name         Dueling Nexus Translate (EN,ES,FR)
 // @namespace    https://duelingnexus.com/
 // @description  Script para traducir la descripción de las cartas a los idiomas soportados en yugioh.fandom.com
 // @author       UsakaRokujou
-// @version      0.2-beta
+// @version      0.2.1-beta
 // @match        https://duelingnexus.com/game/*
 // @match        https://duelingnexus.com/editor/*
 // @grant        none
