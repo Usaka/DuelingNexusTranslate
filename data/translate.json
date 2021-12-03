@@ -371,11 +371,11 @@
     "pt": "Toon"
   },
   "Xyz": {
-    "de": "X und Z",
-    "es": "Xyz",
-    "fr": "X y Z",
-    "it": "X e Z",
-    "pt": "X e Z"
+    "de": "XYZ",
+    "es": "XYZ",
+    "fr": "XYZ",
+    "it": "XYZ",
+    "pt": "XYZ"
   },
   "Pendulum": {
     "de": "Pendel",
@@ -411,5 +411,19 @@
     "fr": "Rang",
     "it": "Rango",
     "pt": "Classificação"
+  },
+  "Pendulum Effect": {
+    "de": "Pendulum Effect",
+    "es": "Efecto De Péndulo",
+    "fr": "Pendulum Effect",
+    "it": "Pendulum Effect",
+    "pt": "Pendulum Effect"
+  },
+  "Monster Effect": {
+    "de": "Pendulum Effect",
+    "es": "Efecto De Monstruo",
+    "fr": "Pendulum Effect",
+    "it": "Pendulum Effect",
+    "pt": "Pendulum Effect"
   }
 }

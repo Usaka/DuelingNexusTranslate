@@ -122,7 +122,9 @@ function setCardData(id) {
 
   // Actualizar la información si es pendulo
   var pendulum = cardsTemp[id][language].pendulum
-    ? `←${card.lscale}【Pendulum Effect】${card.lscale}→<br> ${cardsTemp[id][language].pendulum} <br><br> 【Monster Effect】<br>`
+    ? `←${card.lscale}【${dataText["Pendulum Effect"][language]}】${card.lscale}→<br> 
+    ${cardsTemp[id][language].pendulum} <br><br>
+    【${dataText["Monster Effect"][language]}】<br>`
     : "";
 
   // Actualizar la descripción o efecto de la carta
