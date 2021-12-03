@@ -76,9 +76,13 @@ function downloadCardData(id, card) {
 
 // Consulta la traducción de la carta y la agrega a la vista
 function setCardData(id) {
+  // Actualizar el nombre de la carta
   document.getElementById("card-name").innerHTML = cardsTemp[id][language].name;
+
+  // Verificacion datos de la carta
   var card = Engine.getCardData(id);
 
+  // Actualizar los tipos de la carta
   for (let html of document.getElementsByClassName("card-types")) {
     let cardType = [];
 
@@ -86,23 +90,29 @@ function setCardData(id) {
       cardType.push(dataText[elem] ? dataText[elem][language] : elem);
     });
 
-    html.innerHTML = cardType.join("/");
+    html.innerHTML = cardType.join(" | ");
   }
 
+  // Actualizar la raza de la carta
   let race = document.getElementById("card-race");
   if (race.innerHTML !== "") {
-    race.innerHTML = dataText[race.innerHTML]
-      ? dataText[race.innerHTML][language]
-      : race.innerHTML;
+    race.innerHTML =
+      "<br/>" +
+      (dataText[race.innerHTML]
+        ? dataText[race.innerHTML][language]
+        : race.innerHTML);
   }
 
+  // Actualizar los atributos de la carta
   let attribute = document.getElementById("card-attribute");
   if (attribute.innerHTML !== "") {
-    attribute.innerHTML = dataText[attribute.innerHTML]
-      ? dataText[attribute.innerHTML][language]
-      : attribute.innerHTML;
+    attribute.innerHTML =
+      dataText[attribute.innerHTML] && dataText[attribute.innerHTML][language]
+        ? dataText[attribute.innerHTML][language]
+        : attribute.innerHTML;
   }
 
+  // Actualizar el nivel de la carta
   let level = document.getElementById("card-level");
   if (level.innerHTML !== "") {
     let l = level.innerHTML.split(" ");
@@ -110,12 +120,15 @@ function setCardData(id) {
     level.innerHTML = l.join(" ");
   }
 
+  // Actualizar la información si es pendulo
   var pendulum = cardsTemp[id][language].pendulum
     ? `←${card.lscale}【Pendulum Effect】${card.lscale}→<br> ${cardsTemp[id][language].pendulum} <br><br> 【Monster Effect】<br>`
     : "";
 
-  document.getElementById("card-description").innerHTML =
-    pendulum + cardsTemp[id][language].lore;
+  // Actualizar la descripción o efecto de la carta
+  document.getElementById("card-description").innerHTML = `${
+    pendulum ? pendulum + " " : ""
+  }${cardsTemp[id][language].lore}`;
 }
 
 // Verificar si el script esta en su ultima version o si se actualizo
