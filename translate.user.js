@@ -17,7 +17,10 @@ function loadLanguage(id) {
 
   if (!(0 >= id) && lastCurrentCardId !== id) {
     lastCurrentCardId = id;
+    originalName = document.getElementById("card-name").innerHTML;
     document.getElementById("card-name").innerHTML = "...";
+
+    originalLore = document.getElementById("card-description").innerHTML;
     document.getElementById("card-description").innerHTML = "...";
 
     if (cardsTemp[id]) {
@@ -77,7 +80,9 @@ function downloadCardData(id, card) {
 // Consulta la traducción de la carta y la agrega a la vista
 function setCardData(id) {
   // Actualizar el nombre de la carta
-  document.getElementById("card-name").innerHTML = cardsTemp[id][language].name;
+  document.getElementById("card-name").innerHTML = cardsTemp[id][language].name
+    ? cardsTemp[id][language].name
+    : `【NOT】 - ${originalName}`;
 
   // Verificacion datos de la carta
   var card = Engine.getCardData(id);
@@ -128,9 +133,12 @@ function setCardData(id) {
     : "";
 
   // Actualizar la descripción o efecto de la carta
-  document.getElementById("card-description").innerHTML = `${
-    pendulum ? pendulum + " " : ""
-  }${cardsTemp[id][language].lore}`;
+  document.getElementById("card-description").innerHTML = `
+  ${
+    cardsTemp[id][language].lore
+      ? pendulum + cardsTemp[id][language].lore
+      : "【NOT】<br/>" + originalLore
+  }`;
 }
 
 // Verificar si el script esta en su ultima version o si se actualizo
@@ -231,8 +239,10 @@ async function init() {
 
 // var languageList = ["en", "es", "fr", "de", "it", "pt"];
 var languageList = ["en", "es", "fr"];
+var language = "en";
 var lastCurrentCardId = 0;
+var originalName = "";
+var originalLore = "";
 var cardsTemp = {};
 var dataText = {};
-var language = "en";
 await init();
