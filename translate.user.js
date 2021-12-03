@@ -3,7 +3,7 @@
 // @namespace    https://duelingnexus.com/
 // @description  Script para traducir la descripción de las cartas a los idiomas soportados en yugioh.fandom.com
 // @author       UsakaRokujou
-// @version      0.2.3-beta
+// @version      0.2.4-beta
 // @match        https://duelingnexus.com/game/*
 // @match        https://duelingnexus.com/editor/*
 // @grant        none
