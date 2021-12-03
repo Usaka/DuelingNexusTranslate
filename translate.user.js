@@ -143,7 +143,7 @@ function setCardData(id) {
 
 // Verificar si el script esta en su ultima version o si se actualizo
 function verifyVersion() {
-  var version = "0.2-beta";
+  var version = "0.2.2-beta";
 
   var currentVersion = localStorage.getItem("currentVersion");
 
