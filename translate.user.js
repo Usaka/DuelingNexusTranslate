@@ -148,12 +148,8 @@ function verifyVersion() {
   var currentVersion = localStorage.getItem("currentVersion");
 
   if (version !== currentVersion) {
-    language = localStorage.getItem("language");
-
-    localStorage.clear();
-
     localStorage.setItem("currentVersion", version);
-    localStorage.setItem("language", language);
+    localStorage.removeItem("cardsTemp");
     
     window.location.reload();
   }
