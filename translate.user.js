@@ -35,13 +35,11 @@ function loadLanguage(id) {
 function downloadCardData(id, card) {
   const name = encodeURIComponent(card.name);
   fetch(
-    `https://yugioh.fandom.com/api.php?action=query&titles=${name}&prop=revisions&rvslots=*&rvprop=content&formatversion=2&format=json&origin=*`
+    `https://yugipedia.com/api.php?format=json&action=parse&prop=wikitext&page=${name}&formatversion=2`
   )
     .then((res) => res.json())
     .then((result) => {
-      var content = result.query?.pages[0]?.revisions[0]?.slots?.main?.content;
-
-      content = content.split("|");
+      let content = result.parse?.wikitext?.split('|');
 
       languageList.forEach((l) => {
         if (l !== "en") {
