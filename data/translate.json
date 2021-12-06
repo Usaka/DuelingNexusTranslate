@@ -233,14 +233,14 @@
   "Spell": {
     "de": "Magie",
     "es": "Magia",
-    "fr": "la magie",
+    "fr": "Magie",
     "it": "Magia",
     "pt": "Magia"
   },
   "Trap": {
     "de": "Falle",
     "es": "Trampa",
-    "fr": "Prendre au piège",
+    "fr": "Piège",
     "it": "Trappola",
     "pt": "Armadilha"
   },
@@ -415,14 +415,14 @@
   "Pendulum Effect": {
     "de": "Pendulum Effect",
     "es": "Efecto De Péndulo",
-    "fr": "Pendulum Effect",
+    "fr": "Effet Pendule",
     "it": "Pendulum Effect",
     "pt": "Pendulum Effect"
   },
   "Monster Effect": {
     "de": "Pendulum Effect",
     "es": "Efecto De Monstruo",
-    "fr": "Pendulum Effect",
+    "fr": "Effet de Monstre",
     "it": "Pendulum Effect",
     "pt": "Pendulum Effect"
   }
